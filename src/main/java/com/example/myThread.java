@@ -43,7 +43,7 @@ public class myThread extends Thread {
                 InputStream input = new FileInputStream(file);
 
                 out.writeBytes("HTTP/1.1 200 Ok\n");
-                out.writeBytes("Content-Type: text/html\n");
+                out.writeBytes("Content-Type" + getContentType(file) + "\n");
                 out.writeBytes("Content-Length: " + file.length() + "\n");
                 out.writeBytes("\n");
 
@@ -67,7 +67,6 @@ public class myThread extends Thread {
                 out.writeBytes(responseBody);
                 s.close();
             }
-
            
 
 
@@ -78,4 +77,24 @@ public class myThread extends Thread {
         }
 
     }
+   
+    private static String getContentType(File f) {
+
+        String[] s = f.getName().split("\\.");
+        String ext = s[s.length - 1];
+        switch (ext) {
+            case "html":
+
+            case "htm":
+                return "text/html";
+            case "png":
+                return "image/png";
+            case "css":
+                return "text/css";
+            default:
+                return "";
+        }
+
+    }
+
 }
