@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Recensioni</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik+Wet+Paint&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <!--navbar-->
+    <nav class="navbar navbar-expand-lg  bg-dark opacity-50 fixed-top "data-bs-theme="dark">
+       
+      <a class="navbar-brand" href="#">
+        <img src="../images/logo.png"  width="90" height="70" class="ps-2">
+      </a>
+  
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#"></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://it.wikipedia.org/wiki/The_Legend_of_Zelda">Storia principale </a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+           Saga giochi 
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="../pages/page1.html">Ocarina of time</a></li>
+            <li><a class="dropdown-item" href="../pages/page2.html">Twilight Princess</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="../pages/recensioni.html">Dacci una recensione</a></li>
+          </ul>
+        </li>   
+      </ul>      
+      <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+    </div>
+  </div>
+</nav>
+    <!--titolo-->
+   <h1 class="titoloprinc margine text pb-4"> Conoscere il tuo parere è importante per migliorare  </h1>
+          
+<!--grid1-->
+   <div class="container text-center ">
+    <div class="row mt-5 bordi1">
+      
+      <div class="col mb-4 col-md-6 col-sm-12 col-12">
+       
+        <form action="/action_page.php">
+          <label for="fname"class="titoloprinc pt-5">Nome:</label><br>
+          <input type="text" id="fname" name="fname" value="John"><br>
+          <label for="lname" class="titoloprinc pt-5">Cognome:</label><br>
+          <input type="text" id="lname" name="lname" value="Doe"><br><br>
+          
+          <p class="text-danger pt-4"> valutazione:</p>  
+            <input type="radio" name="fav_language" value="pessima">
+            <label for="pessima " class="titoloprinc">pessima</label>
+         
+            <input type="radio" name="fav_language" value="normale">
+            <label for="normale" class="titoloprinc">normale</label>
+
+            <input type="radio" name="fav_language" value="buona">
+            <label for="buona" class="titoloprinc">buona</label>
+            <br>
+            <textarea name="message" rows="5" cols="30" class="mt-5">Inserisci la tua recensione</textarea> <br>
+           
+          <input type="submit" class= "mt-3" value="Submit">
+        </form>
+       </div>
+      
+      <div class="col  col-md-6 col-sm-12 col-12 margine">
+        <img src="../images/trio.jpg" class="imagerec" >
+        <img src="../images/rec.jpg" class="imagerec">
+      </div>
+      
+    </div>
+  </div>
+
+  <!--carousel-->
+  <h1 class="titoloprinc mt-3">Recensione fornite da aziende videoludiche:</h1>
+  <div id="carouselExampleFade" class="carousel slide carousel-fade w-50 mx-auto mb-4 bordi2">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="../images/z1.webp" class="d-block carousel2-image">
+      </div>
+      <div class="carousel-item">
+        <img src="../images/z2.jpg" class="d-block carousel2-image">
+      </div>
+      <div class="carousel-item">
+        <img src="../images/z3.jpg" class="d-block carousel2-image">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  
+
+ <!--grid social-->
+       <div class="container text-center">
+        <div class="row sfondo text-light">
+          
+          <div class="col h-100 " >
+            <a href="https://www.instagram.com/" class=" titoloprinc fonth1">Vieni a trovarci su instagram </a>
+            <hr>
+            <img src="../images/ig.png" class="imagesocial ">
+          </div>
+          
+          <div class="col h-100 ">
+            <a href="https://www.nintendo.it/?utm_medium=search_paid&utm_source=google&utm_campaign=NIT_eShop_SearchShopping_FY24%7CIT&utm_term=StoreTraffic%7CGeneral%20Promotion&utm_content=Link%20Ad&gad=1&gclid=CjwKCAjw67ajBhAVEiwA2g_jEK7nDf1OSxyj6O43sshm9YT62ZHM_8Y-Dgt1qyCHHzy49cSAT2PsThoCv6oQAvD_BwE" class=" titoloprinc fonth1"> Vieni a trovarci in sede </a>
+            <hr>
+            <img src="../images/nintendo.jpg" class="imagesocial ">
+          </div>
+         
+          <div class="col h-100 ">
+            <a href="https://www.tiktok.com/login?redirect_url=https%3A%2F%2Fwww.tiktok.com%2Fen&lang=en&enter_method=mandatory" class=" titoloprinc fonth1 ">Vieni a trovarci su tik tok </a>
+            <hr>
+            <img src="../images/tik tok.png" class="imagesocial ">
+          </div>
+          <p class="titoloprinc mt-2">Privacy Policy | Terms of Use | Cookie Preferences</p>
+          <p class="titoloprinc">© Nintendo. The Legend of Zelda and Nintendo Switch are trademarks of Nintendo            </p>
+        </div>
+      </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+  </body>
+</html>

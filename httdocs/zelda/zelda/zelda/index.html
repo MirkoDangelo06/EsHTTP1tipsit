@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik+Wet+Paint&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!--navbar-->
+    <nav class="navbar navbar-expand-lg  bg-dark opacity-50 fixed-top "data-bs-theme="dark">
+       
+        <a class="navbar-brand" href="#">
+          <img src="./images/logo.png"  width="90" height="70" class="ps-2">
+        </a>
+    
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://it.wikipedia.org/wiki/The_Legend_of_Zelda">Storia principale </a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+             Saga giochi 
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="./pages/page1.html">Ocarina of time</a></li>
+              <li><a class="dropdown-item" href="./pages/page2.html">Twilight Princess</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="./pages/recensioni.html">Dacci una recensione</a></li>
+            </ul>
+          </li>   
+        </ul>      
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+<div class="sfondobody">
+  <div class="container text-center"> <!--grid 1 sinistra-->
+    <div class="row">
+      
+      <div class="col col-md-6 col-sm-12 col-12 ">
+        <img src="./images/link-1.png" class="images">
+        <h3 class="titoloprinc"> Link, protagonista della saga      </h>
+      </div>
+     
+    
+      <div class="col  text col-md-6 col-sm-12 col-12 sfondodiv">
+        <h1 class="titoloprinc" > Zelda, un capolavoro firmato Nintendo</h1>   <!--fonts e grid 1 destra    -->
+        <p class="text-light pt-3">
+            La serie divenne subito una delle più importanti della storia videoludica, arrivando a vendere 
+            complessivamente quasi 110 milioni di copie in tutto il mondo e producendo un grande numero di seguiti,
+            comparsi su molte delle console dell'azienda di Kyoto: Nintendo Entertainment System, Super Nintendo
+            Entertainment System, Nintendo 64, Nintendo Game Boy, Nintendo GameCube, Nintendo Wii, Nintendo DS, 
+            Nintendo 3DS, Nintendo Wii U e Nintendo Switch.Sin dal suo debutto con il primo The Legend of Zelda, 
+            la serie è considerata una delle più acclamate della storia videoludica e la maggior parte dei titoli che
+            la compongono sono riconosciuti dalla critica come grandi capolavori.
+        </p>
+      </div>
+    </div>
+  </div>
+
+     <!--carousel-->
+  <div id="carouselExampleCaptions" class="carousel slide carosello">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="./images/backganon.jpg" class="d-block w-100 carousel-image" >
+        <div class="carousel-caption d-none d-md-block">
+          <h5 class="colore">In un open world fenomenale</h5>
+          <p class="colore">Open world a 360 gradi dove puoi davvero esplorare ogni angolo, con vulcani, lande desolate, ghiacciai, piane verdi, montagne dalle cime altissime e deserti </p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="./images/pioggia.jpg" class="d-block w-100 carousel-image" >
+        <div class="carousel-caption d-none d-md-block">
+          <h5 class="colore">Un rapporto unico</h5>
+          <p class="colore">Scopri ed approfondisci la relazione tra link, lo spadaccino di hyrule e la principessa zelda.Una semplice amicizia? O forse di più </p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="./images/ganondorfback.png" class="d-block w-100 carousel-image" >
+        <div class="carousel-caption d-none d-md-block">
+          <h5 class="colore">Ganondorf, re dei demoni</h5>
+          <p class="colore">Maledetto già prima della sua nascita, ganondorf è l'erede del re dei demoni e farà di tutto per accaparrarsi il controllo di hyrule.</p>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  
+  <!--card e grid-->
+  <div class="container text-center">
+    <div class="row card-deck">
+  
+      <div class="col col-md-4 col-sm-12 col-12">
+        <div class="card mb-4">
+          <img src="./images/zelda.png" class="card-img-top card-image" alt="...">
+          <div class="card-body cardbg">
+            <h4 class="card-title">Zelda</h4>
+            <p class="card-text">La principessa di hyrule, nonchè anche saggia del tempo. Si ritroverà nella serie a dover salvare l'intero regno di hyrule da una catastrofe</p>        
+          </div>
+        </div>
+      </div>
+  
+      <div class="col col-md-4 col-sm-12 col-12">
+        <div class="card mb-4">
+          <img src="./images/link-1.png" class="card-img-top card-image" alt="...">
+          <div class="card-body cardbg">
+            <h4 class="card-title">Link</h4>
+            <p class="card-text">link, lo spadaccino che salva la principessa. Possiede tante reincarnazioni ed è discendente del primo re di hyrule,</p>          
+          </div>
+        </div>
+      </div>
+  
+      <div class="col col-md-4 col-sm-12 col-12">
+        <div class="card mb-4">
+          <img src="./images/ganondorf.png" class="card-img-top card-image" alt="...">
+          <div class="card-body cardbg">
+            <h4 class="card-title">Ganondorf</h4>
+            <p class="card-text">Maledetto già prima della sua nascita, ganondorf è l'erede del re dei demoni e farà di tutto per accaparrarsi il controllo di hyrule.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+
+<!--grid 2 destra-->
+  <div class="container text-center sfondodiv"> 
+    <div class="row text ">    
+      <div class="col col-lg-6 col-sm-12 col-12  ">
+        <h1 class="titoloprinc py-5 " > Zelda, la principessa da salvare,la vera protagonista  </h1>   <!--fonts e grid 1 destra    -->
+        <p class="text-light py-5">
+          La Principessa Zelda è uno dei personaggi principali dalla serie Nintendo di The Legend of Zelda.
+           Diverse incarnazioni di Zelda sono state create tra i vari giochi della serie, ma tutte condividono alcune caratteristiche,
+            come il fatto di essere la principessa di Hyrule o di possedere la Triforza della Saggezza. La trama della serie si concentra su Zelda 
+            e Link che cercano di fermare Ganondorf dall'ottenere i due pezzi mancanti della Triforza che non sono dentro di lui. Anche se lei da il nome alla serie, 
+            è Link il protagonista. Zelda può essere definita come l'equivalente della Principessa Peach, ma al contrario di quest'ultima Zelda si è dimostrata in grado
+             di poter aiutare Link nelle sue avventure anziché essere solo una damigella in pericolo. Ad esempio, in The Legend of Zelda: The Ocarina of Time, Zelda
+              si trasforma nel suo alter ego Sheik, ausiliando Link senza rivelargli la sua vera identità.
+        </p>
+      </div>
+
+      <div class="col col-md-6 col-sm-12 col-12 mx-auto text-center">
+        <img src="./images/the-legend-of-zelda-breath-of-the-wild-princess-zelda-link-the-legend-of-zelda-twilight-princess-hd-the-legend-of-zelda-34905d146d13ba27e4999ba14a03b68b (1).png" class="image-size">
+        <h5 class="titoloprinc">Zelda, principessa di Hyrule     </h5>
+      </div>
+
+    </div>
+  </div>
+
+  <!--altra riga-->
+    <div class="row">
+      <div class="col col-md-6 col-sm-12 col-12 mt-5 pt-5 text-center ">
+        <!-- Carousel -->
+        <h3 class="titoloprinc" > Scene di gameplay:      </h1>
+        <div id="carouselExampleFade" class="carousel slide carousel-fade w-75 mt-5 mx-auto bordi2">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="./images/combact.jpg" class="d-block carousel2-image" >
+            </div>
+            <div class="carousel-item">
+              <img src="./images/esploration.jpg" class="d-block carousel2-image" >
+            </div>
+            <div class="carousel-item">
+              <img src="./images/creation.webp" class="d-block carousel2-image" >
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+       
+      <div class="col bordi1 col-md-6 col-sm-12 col-12 mt-5 text-center sfondodiv">
+        <h1 class="titoloprinc pt-4 " > Come è il gameplay?  </h1>  
+        <p class="text-light pt-4 ">         
+          Il gameplay di The Legend of Zelda è un mix di esplorazione, 
+          risoluzione di puzzle (spesso anche abbastanza complicati), strategia e azione,
+          elementi che sono rimasti pressoché costanti lungo tutto l'arco della serie, salvo qualche miglioramento di natura tecnica.
+          La maggior parte dei giochi della serie (in pratica tutti tranne Zelda II: The Adventure of Link) consiste nell'esplorazione
+          di un consistente numero di labirinti (o dungeon), all'interno del quale si devono risolvere dei puzzle e sconfiggere i nemici
+          all'interno, prima di arrivare ad affrontare il Signore del Labirinto (Dungeon Boss). Durante l'esplorazione, in ogni labirinto 
+          Link troverà un oggetto che gli consentirà di andare avanti in quello stesso labirinto, sconfiggere il boss e avanzare nella 
+          toria. Molti di questi oggetti sono elementi ricorrenti nella serie (il Portabombe o, ancora più importante, l'Arco, che in
+          molti capitoli serve a battere il Boss finale), mentre altri compaiono 
+          solo in alcuni giochi (il Bastone della Sabbia, apparso soltanto in Spirit Tracks e in A Link Between Worlds).
+        </p> 
+      </div>
+    </div>
+  
+    <!--grid3 social-->
+    <div class="container text-center">
+      <div class="row sfondo mt-5 text-light pt-4 ">
+        
+        <div class="col h-100 " >
+          <a href="https://www.instagram.com/" class=" titoloprinc fonth1">Vieni a trovarci su instagram </a>
+          <hr>
+          <img src="./images/ig.png" class="imagesocial ">
+        </div>
+        
+        <div class="col h-100 ">
+          <a href="https://www.nintendo.it/?utm_medium=search_paid&utm_source=google&utm_campaign=NIT_eShop_SearchShopping_FY24%7CIT&utm_term=StoreTraffic%7CGeneral%20Promotion&utm_content=Link%20Ad&gad=1&gclid=CjwKCAjw67ajBhAVEiwA2g_jEK7nDf1OSxyj6O43sshm9YT62ZHM_8Y-Dgt1qyCHHzy49cSAT2PsThoCv6oQAvD_BwE" class=" titoloprinc fonth1"> Vieni a trovarci in sede </a>
+          <hr>
+          <img src="./images/nintendo.jpg" class="imagesocial ">
+        </div>
+       
+        <div class="col h-100 ">
+          <a href="https://www.tiktok.com/login?redirect_url=https%3A%2F%2Fwww.tiktok.com%2Fen&lang=en&enter_method=mandatory" class=" titoloprinc fonth1 ">Vieni a trovarci su tik tok </a>
+          <hr>
+          <img src="./images/tik tok.png" class="imagesocial ">
+        </div>
+        <p class="titoloprinc mt-2">Privacy Policy | Terms of Use | Cookie Preferences</p>
+        <p class="titoloprinc">© Nintendo. The Legend of Zelda and Nintendo Switch are trademarks of Nintendo            </p>
+      </div>
+    </div>
+ </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+</body>
+</html>

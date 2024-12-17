@@ -1,0 +1,208 @@
+
+body{
+    background-color: rgb(3, 12, 0);
+    
+}
+
+.images{
+    width: 300px;
+    height: 70%;
+    margin-top: 140px;
+}
+.text{
+    padding-top: 20px;
+    margin-top: 100px;
+    border: 8px solid rgb(8, 58, 58);
+}
+.titoloprinc{
+    color: rgb(128, 101, 5);
+    text-align: center;
+    font-family: 'Rubik Wet Paint', cursive;
+}
+
+.carosello{
+    margin-top: 30px;
+}
+
+.colore{
+ background-color:rgb(154, 162, 6);
+ color: rgb(165, 20, 4);
+}
+
+.carousel-image {
+    height: 880px;
+    padding-bottom: 30px;
+  }
+
+  .card-image {
+    height: 350px;
+    background-color: rgb(8, 58, 58);
+  }
+  
+  .col h4{
+    color:rgb(162, 32, 6) ;
+  }
+
+  .cardbg{
+    background-color: rgb(112, 118, 5);
+    
+  }
+
+  .image-size{
+    width: 70%;
+    height: 80%;
+    padding-top:  20px;
+    padding-bottom: 15px;
+
+  }
+  
+  .fondopagina{
+    margin-top: 120px;
+    text-align: center;
+    width: 25%;
+    box-sizing: border-box;
+    float: left;
+}
+.titoloprinc{
+  color: rgb(128, 101, 5);
+  text-align: center;
+}
+
+.fonth1{
+   font-size: 90%;
+   background-color: black; 
+   text-decoration: none;
+}
+.fonth1:hover{
+  background-color:rgb(112, 118, 5) ;
+}
+
+.colorhr{
+ color:rgb(112, 118, 5) ;
+ 
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: rgb(8, 0, 0);
+  margin-left: -5px;
+}
+
+.carousel2-image {
+  height: 100%;
+  width: 100%; 
+}
+
+.bordi1{
+  border: 8px solid rgb(112, 118, 5);
+}
+
+.bordi2{
+  border: 8px solid rgb(8, 58, 58);
+}
+
+.sfondo{
+  background-color: rgb(8, 58, 58);
+  border: 8px solid rgb(112, 118, 5);
+  border-top-left-radius: 40px;
+  border-top-right-radius: 40px;
+  border-bottom: 0px; 
+}
+
+.imagesocial{
+  width: 30%;
+  height: 56%;
+  padding-bottom: 10px;
+}
+
+.margine{
+  margin-top: 150px;
+}
+
+.imagerec{
+
+  width: 70%;
+  height: 25%;
+ 
+}
+.imagerec2{
+  width:  98%;
+  height: 25%;
+}
+.sfondodiv{
+  background-color: rgb(19, 18, 18);
+}
+
+
+.sfondobody{
+
+  background-image: url(../images/triforce.jpg);
+  height: 100%;
+}
+.sfondopage2 {
+  background-image: url(../images/calamita.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.sfondopage1{
+  background-image: url(../images/empty-green-studio-well-use-as-background-website-template-frame-business-report.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+.sfondogioco{
+  background-image: url(../images/repeat.jpg);
+}
+
+.accordion-button {
+  color: rgb(113, 125, 6);
+  font-size: 18px;
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: rgb(8, 58, 58) ;
+  color: black ;
+}
+.back1{
+  background-color: rgb(113, 125, 6);
+}
+
+.margine2{
+  margin-top: 300px;
+}
+.imagecenter{
+  margin-left: auto;
+  margin-right: auto;
+}
+.altezzadiv{
+  height: 60%;
+}
+
+.altezzaschede{
+  height: 25%;
+}
+
+.altezzaschede p{
+  color: rgb(0, 0, 0);
+  text-align: center;
+  font-size:larger;
+  background-color:rgb(85, 5, 5) ;
+}
+
+.imageschede {
+  display: block;
+  margin: auto;
+  text-align: center;
+  width: 65%;
+  height: 110px;
+  padding-bottom: 10px;
+}
+.imagetw{
+  height: 500px;
+}
+
+.sfondogioco .imagesocial:hover{
+  opacity: 0.5;
+}

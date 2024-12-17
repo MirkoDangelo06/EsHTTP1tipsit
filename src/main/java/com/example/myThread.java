@@ -33,11 +33,15 @@ public class myThread extends Thread {
 
             do {
                 stringa = in.readLine();
-                
+
             } while (!stringa.isEmpty());
 
-            if(resource.equals("/"))
-                    resource = "/index.html";
+            if (resource.equals("/"))
+                resource = "/index.html";
+
+            if (resource.endsWith("/"))
+                resource = resource +"/index.html";
+
 
             File file = new File("httdocs" + resource);
             if (file.exists()) {
