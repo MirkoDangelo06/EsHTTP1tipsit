@@ -36,21 +36,32 @@ public class myThread extends Thread {
 
             } while (!stringa.isEmpty());
 
+
+
             if (resource.equals("/"))
                 resource = "/index.html";
+
 
             if (resource.endsWith("/"))
                 resource = resource +"/index.html";
 
 
+            //non torna, la devo ricontrollare
             File file = new File("httdocs" + resource);
-            if (file.exists()) {
+            if(file.isDirectory()){
+                out.writeBytes("HTTP/1.1 301 Moved Permanent\n");
+                out.writeBytes("Content-Length: 0\n");
+                out.writeBytes("Location" + resource + "/\n");
+                out.writeBytes("\n");
                 
 
+            }else if (file.exists()) {
+                
                 out.writeBytes("HTTP/1.1 200 Ok\n");
                 out.writeBytes("Content-Type" + getContentType(file) + "\n");
                 out.writeBytes("Content-Length: " + file.length() + "\n");
                 out.writeBytes("\n");
+
                 InputStream input = new FileInputStream(file);
                 byte[] buf = new byte[8192];
                 int n;
@@ -65,7 +76,7 @@ public class myThread extends Thread {
 
             } else {
                 String responseBody = "no smash";
-                out.writeBytes("HTTP/1.1 404 Not Found \n");
+                out.writeBytes("HTTP/1.1 404 NoresponseBodyt Found \n");
                 out.writeBytes("Content-Type: text/plain \n");
                 out.writeBytes("Content-Length: " + responseBody.length() + "\n");
                 out.writeBytes("\n");
