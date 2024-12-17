@@ -36,17 +36,18 @@ public class myThread extends Thread {
                 
             } while (!stringa.isEmpty());
 
-            if (resource.equals("/index.html") || resource.equals("/file.txt") || resource.equals("/")) {
-            
-               // String responseBody = "Benvenuto nell'home pageeeee";
-                File file = new File("httdocs/index.html");
-                InputStream input = new FileInputStream(file);
+            if(resource.equals("/"))
+                    resource = "/index.html";
+
+            File file = new File("httdocs" + resource);
+            if (file.exists()) {
+                
 
                 out.writeBytes("HTTP/1.1 200 Ok\n");
                 out.writeBytes("Content-Type" + getContentType(file) + "\n");
                 out.writeBytes("Content-Length: " + file.length() + "\n");
                 out.writeBytes("\n");
-
+                InputStream input = new FileInputStream(file);
                 byte[] buf = new byte[8192];
                 int n;
                 while((n = input.read(buf)) != -1 ){
@@ -91,10 +92,18 @@ public class myThread extends Thread {
                 return "image/png";
             case "css":
                 return "text/css";
+            
+            case "jpg":
+                return "image/jpg";
+
+            case "webp":
+                return "image/webp";
             default:
                 return "";
         }
 
     }
+
+
 
 }
